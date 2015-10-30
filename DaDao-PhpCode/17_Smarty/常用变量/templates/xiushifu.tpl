@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>{$title}</title>
+</head>
+<body>
+{$message|capitalize}{*首字母转大写的修饰符*}<br>
+{$message|count_characters}{*计算变量值中字符数的修饰符*}<br>
+{$message|count_words}{*计算变量值中的单词总数的修饰符*}<br>
+{$message|date_format}{*对日期格式化的修饰符*}<br>
+{$message|default}{*变量若为空，指定一个变量的修饰符*}<br>
+{$message|strip_tags}{*过滤html标签的修饰符*}<br>
+{$message|truncate}{*截取指定数量的字符默认为80*}
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML DIR="LTR" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:myScript="http://iisue" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<HEAD>
+<META NAME="DESCRIPTION" VALUE="Reference information about the built-in objects available to ASP applications, like the Request and Response objects.">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+		<script SRC="scripts/langref.js"></script>
+		<script SRC="scripts/linkcss.js"></script>
+<title>Response.CacheControl</title><XML><MSHelp:TOCTitle Title="Response.CacheControl"/>
+<MSHelp:RLTitle Title="Response.CacheControl (IIS)"/>
+<MSHelp:Attr Name="DocSet" Value="IIS SDK"/>
+<MSHelp:Attr Name="DocSet" Value="PSDK"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Technology" Value="IIS"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbIIS" />
+<MSHelp:Attr Name="Technology" Value="ASP"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbASP" />
+
+<MSHelp:Attr Name="TopicType" Value="kbSyntax"/>
+<MSHelp:Keyword Index="A" Term="Response.CacheControl"/>
+<MSHelp:Keyword Index="A" Term="_IIS6_Response.CacheControl"/>
+<MSHelp:Keyword Index="F" Term="CacheControl" /></XML></HEAD>
+
+<body topmargin=0 id="bodyID">
+<a name="top"></a>			<TABLE CLASS="buttonbarshade" cellspacing="0" cellpadding="0">
+				<TR>
+					<TD></TD>
+				</TR>
+			</TABLE>
+		<TABLE class="buttonbartable" cellspacing="0" cellpadding="0">
+			<TR id="hdr">
+				<TD runninghead="">
+					Platform SDK: IIS SDK
+				</TD>
+			</TR>
+		</TABLE>
+
+<span class="version">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[IIS 5.0]</b>&nbsp;<b>[IIS 5.1]</b>&nbsp;<b>[IIS 6.0]</b></span>
+
+<h1>Response.CacheControl</h1>
+<p>The <b>CacheControl</b> property enables you to set the HTTP/1.1
+Cache Control header in <b>Response.Syntax</b></p>
+<p>The values for <b>CacheControl</b> are strings, and must be
+enclosed in quotation marks (" "). You must set <b>CacheControl</b>
+before any response is sent to the client, unless response
+buffering is enabled.</p>
+<h4>Syntax</h4>
+<p>Response.CacheControl [<b>=</b> <i>Cache Control Header</i>
+]</p>
+<h4>Parameters</h4>
+<dl>
+<dt><i>Cache Control Header</i></dt>
+<dd>The following is a partial list of values supported by the
+HTTP/1.1 Protocol. For more complete descriptions, see the <i>
+Hypertext Transfer Protocol, HTTP/1.1</i> specification of section
+14.9 on the <a href="http://go.microsoft.com/fwlink/?LinkId=1761" target="_New">World Wide Web Consortium</a> Web site.</dd>
+<dd><b></b><table class="UAweb" width="100%">
+<tr>
+<th><b>Value</b></th>
+<th><b>Description</b></th>
+</tr>
+<tr>
+<td width="50%">
+<dl>
+<dt>Private</dt>
+</dl>
+</td>
+<td width="50%">
+<dl>
+<dt>A cache mechanism may cache this page in a private cache and
+resend it only to a single client. This is the default value. Most
+proxy servers will not cache pages with this setting.</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<dl>
+<dt>Public</dt>
+</dl>
+</td>
+<td width="50%">
+<dl>
+<dt>Shared caches, such as proxy servers, will cache pages with
+this setting. The cached page can be sent to any user.</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<dl>
+<dt>No-cache</dt>
+</dl>
+</td>
+<td width="50%">
+<dl>
+<dt>Do not cache this page, even if for use by the same
+client.</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<dl>
+<dt>No-store</dt>
+</dl>
+</td>
+<td width="50%">
+<dl>
+<dt>The response and the request that created it must not be stored
+on any cache, whether shared or private. The storage inferred here
+is nonvolatile storage, such as tape backups. This is not an
+infallible security measure.</dt>
+</dl>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<h4>Note</h4>
+<p>Between your Web server and a user requesting your page, there
+may be proxy servers configured to cache Web pages for faster
+response times. Usually ASP pages are developed to be unique for
+each user or may contain secure information.  For this reason,
+IIS sets this property to "Private" so that proxy servers or other
+cache mechanisms will not cache pages.  You can override this
+default value, setting it to any value supported by the HTTP/1.1
+protocol. For more information, see the <i>Hypertext Transfer
+Protocol, HTTP/1.1</i> specification of section 14.9 on the <a href="http://go.microsoft.com/fwlink/?LinkId=1761" target="_New">World Wide Web Consortium</a> Web site.</p>
+<p>If there is no cache mechanism between your Web server and a
+client computer, or if a proxy server is running HTTP/1.0, <b>
+CacheControl</b> will be ignored.</p>
+<p>Setting <b>CacheControl</b> to "Public" may seem to improve the
+performance of your .asp files, but it is discouraged if you
+generate custom HTML for every request, and a proxy server might
+interfere with the response.</p>
+<h4>Example</h4>
+<p><b>CacheControl</b> comes before the &lt;HTML&gt; tag to ensure
+that it is set before content is sent to the client.</p>
+<p>--- CacheControl_NoBuffer.asp ---</p>
+<pre><code>&lt;%
+  Response.Buffer = False
+  Response.CacheControl = "private"
+%&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Response.CacheControl Example&lt;/TITLE&gt;&lt;/HEAD&gt;
+&lt;BODY&gt;
+Output from this page is sent to the client as it is being processed.&lt;BR&gt;
+It will not be cached.&lt;BR&gt;
+Today is &lt;%= Date %&gt;, &lt;%= Time %&gt;&lt;BR&gt;
+&lt;H3&gt;Please enter your credit card number:&lt;/H3&gt;
+&lt;FORM NAME="Order" METHOD="POST" ACTION="order.asp "&gt;
+&lt;INPUT TYPE="TEXT" NAME="CreditCard"&gt;
+&lt;INPUT TYPE="SUBMIT" VALUE="Submit" NAME="Submit"&gt;
+&lt;/FORM&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</code></pre>
+<p>--- CacheControl_Buffer.asp ---</p>
+<pre><code>&lt;% Response.Buffer = True %&gt;
+&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Response.CacheControl Example&lt;/TITLE&gt;&lt;/HEAD&gt;
+&lt;BODY&gt;
+Output from this page is sent to the client once it is completely processed by the server, so we can set CacheControl anytime.&lt;BR&gt;
+&lt;% Response.CacheControl = "private" %&gt;
+It will not be cached.&lt;BR&gt;
+Today is &lt;%= Date %&gt;, &lt;%= Time %&gt;&lt;BR&gt;
+&lt;H3&gt;Please enter your credit card number:&lt;/H3&gt;
+&lt;FORM NAME="Order" METHOD="POST" ACTION="order.asp "&gt;
+&lt;INPUT TYPE="TEXT" NAME="CreditCard"&gt;
+&lt;INPUT TYPE="SUBMIT" VALUE="Submit" NAME="Submit"&gt;
+&lt;/FORM&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</code></pre>
+<h4>Applies To</h4>
+<p><a href="ref_vbom_reso.htm">Response Object</a></p>
+  <h4>Requirements</h4>
+  <p><b>Platforms:</b> Windows&nbsp;2000 with IIS 5.0 installed, 
+   Windows&nbsp;XP with IIS 5.1 installed, 
+   Windows Server&nbsp;2003 family with IIS 6.0 installed<br>
+  </p>
+		<DIV CLASS="itfBorder"><IMG SRC="art/tiny.gif" WIDTH="1" HEIGHT="1"></DIV>
+<DIV CLASS="itf">
+  <B>Platform SDK Release: <FONT COLOR="#ddaa00">February 2003</FONT></B>
+  <TABLE CELLPADDING="0" CELLSPACING="0"><TR VALIGN="top">
+    <TD WIDTH="13" CLASS="itficon"><A HREF="mailto:sdkfdbk@microsoft.com?subject=TITLE:%20Response.CacheControl;%20RELEASE:%20February%202003;%20URL:%20ref_vbom_resopcc.htm" Title="Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"><IMG SRC="art/sendfdbk.gif" BORDER="0" WIDTH="13" HEIGHT="15"/></A></TD>
+    <TD WIDTH="47%" CLASS="itf"><A HREF="mailto:sdkfdbk@microsoft.com?subject=TITLE:%20Response.CacheControl;%20RELEASE:%20February%202003;%20URL:%20ref_vbom_resopcc.htm" Title="Send feedback to the Platform SDK team at sdkfdbk@microsoft.com">What did you think of this topic?</A><BR></TD>
+    <TD WIDTH="16" CLASS="itficon"><IMG SRC="art/download.gif" BORDER="0" WIDTH="16" HEIGHT="16"/></TD>
+    <TD CLASS="itf"><A HREF="https://qmedia.e-storefront.com/showcontent.asp?contentname=PlatformSDKHome" TARGET="_blank" TITLE="Order a Platform SDK CD">Order a Platform SDK CD</A></TD>
+  </TABLE>
+</DIV>
+<BR/>
+
+
+  	</body>
+  </HTML>

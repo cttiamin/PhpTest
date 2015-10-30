@@ -1,0 +1,17 @@
+<?php
+// mysqli É¾³ý
+$db_host='localhost';
+$db_user='root';
+$db_pws='123456';
+$db_name='test';
+$mysqli=new mysqli($db_host,$db_user,$db_pws,$db_name);
+$query="delete from users where id=2";
+$result=$mysqli->query($query);
+if($result){
+	echo "É¾³ý²Ù×÷Ö´ÐÐ³É¹¦";
+}else{
+	echo "É¾³ýÖ´ÐÐÊ§°Ü";
+}
+$mysqli->close();
+
+?>

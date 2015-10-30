@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta name="Copyright" content="2002-2003 The NetBox Project, http://www.netbox.cn/">
+
+<link rel="stylesheet" type="text/css" href="../help.css">
+<META http-equiv=content-type content="text/html; charset=gb2312">
+<title>Response.Cookies 集合</title></head>
+<script language="javascript">if(location.protocol == "http:" && document == top.document)top.location = "../?" + location</script>
+<basefont face="Times New Roman, Times, serif">
+
+<body bgcolor="white" topmargin="3" marginheight="3" leftmargin="3" marginwidth="3">
+
+<table width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td bgcolor="#99CCFF">
+
+</td></tr></table>
+
+<h2>Cookies 集合</h2>
+<p><b>Cookies </b>集合设置 cookie 的值。若指定的 cookie 不存在，则创建它。若存在，则设置新的值并且将旧值删去</p>
+<h4>语法</h4>
+<pre><b>Response.Cookies</b>(<i>cookie</i>)[(<i>key</i>)|.<i>attribute</i>] = <i>value</i>
+ </pre>
+
+<h4>参数</h4>
+<i>cookie</i>
+<dd>cookie 的名称</dd><br>
+<i>key</i>
+<dd>可选参数。如果指定了 <i>key</i>，则 cookie 就是一个字典，而 <i>key</i> 将被设置为 <i>value</i></dd><br>
+<i>attribute</i>
+<dd>指定 cookie 自身的有关信息</dd><br>
+<i>Value</i>
+<dd>指定分配给 <i>key </i>或 <i>attribute</i> 的值</dd>
+
+<h4>功能</h4>
+<p><i>attribute</i> 表示 cookie 自身的有关信息。attribute 参数可以是下列之一：</p>
+<table>
+<tr valign=top>
+<td>
+Domain</td>
+<td>
+只允许写。若被指定，则 cookie 将被发送到对该域的请求中去。</td>
+</tr>
+<tr valign=top>
+<td>
+Expires</td>
+<td>
+只允许写。cookie 的过期日期。为了在会话结束后将 cookie 存储在客户端磁盘上，必须设置该日期。若此项属性的设置未超过当前日期，则在任务结束后 cookie 将到期。</td>
+</tr>
+<tr valign=top>
+<td>
+HasKeys</td>
+<td>
+只允许读。指定 cookie 是否包含关键字。</td>
+</tr>
+<tr valign=top>
+<td>
+Path </td>
+<td>
+只允许写。若被指定，则 cookie 将只发送到对该路径的请求中。如果未设置该属性，则使用应用程序的路径。</td>
+</tr>
+<tr valign=top>
+<td>
+Secure</td>
+<td>
+只允许写。指定 cookie 是否安全。</td>
+</tr>
+</table>
+
+<h4>注释</h4>
+<p>如果创建了一个带有关键字的 cookie，如下列脚本所示，</p>
+<pre>&lt;% 
+Response.Cookies(&quot;mycookie&quot;)(&quot;type1&quot;) = &quot;sugar&quot;
+Response.Cookies(&quot;mycookie&quot;)(&quot;type2&quot;) = &quot;ginger snap&quot;
+%&gt;</pre>
+<p>则此标题将被发送出去。</p>
+<pre>Set-Cookie:MYCOOKIE=TYPE1=sugar&amp;TYPE2=ginger+snap</pre>
+<p>如果在指定 myCookie 时不指定关键字，将破坏 type1 和 type2。如下面示例所示。</p>
+<pre>&lt;% Response.Cookies(&quot;myCookie&quot;) = &quot;chocolate chip&quot; %&gt;</pre>
+<p>在前面的示例中，关键字 type1 和 type2 被破坏且其值也被删除。myCookie cookie 只有 chocolate chip 的值。</p>
+<p>反之，如果您用一个关键字调用 cookie，就会毁坏 cookie 包含的任何无关键字的值。例如，如果在上述代码后，用下面的语句调用 <b>Response.Cookies</b>，</p>
+<pre>&lt;% Response.Cookies(&quot;myCookie&quot;)(&quot;newType&quot;) = &quot;peanut butter&quot; %&gt;</pre>
+<p>则 chocolate chip 的值将被删除且 newType 会被设置为 peanut butter。</p>
+<p>要确定 cookie 是否有关键字，可使用下面的语法。</p>
+<pre>&lt;%= Response.Cookies(&quot;myCookie&quot;).HasKeys %&gt;</pre>
+<p>如果 myCookie 是一个 cookie 字典，则前面的值为 TRUE。否则，为 FALSE。</p>
+<p>可以通过循环来设置 cookie 的属性。例如，要将所有的 cookie 设置为在一个特定的日期到期，可使用下面的语法。</p>
+<pre>&lt;% 
+For Each cookie in Response.Cookies
+  Response.Cookie(cookie).Expires = #July 4, 1997#
+Next
+%&gt;</pre>
+<p>您可以使用一个循环设置一个集合中的所有 cookie 或一个 cookie 中的所有关键字。然而，循环在 cookie 没有关键字时若被引用将不会执行。为避免这种情况，你可以先使用 <b>.HasKeys</b> 语法检查一个 cookie 是否有关键字。下面的示例对此进行说明。</p>
+<pre>&lt;% 
+If Not cookie.HasKeys Then
+  'Set the value of the cookie 
+  Response.Cookies(cookie) = &quot;&quot;
+Else
+  'Set the value for each key in the cookie collection
+  For Each key in Response.Cookies(cookie)
+    Response.Cookies(cookie)(key) = &quot;&quot;
+  Next key
+%&gt;</pre>
+
+<h4>示例</h4>
+<p>下面的示例说明如何设置 cookie 的值以及如何为其属性赋值。</p>
+<pre>&lt;% 
+Response.Cookies(&quot;Type&quot;) = &quot;Chocolate Chip&quot;
+Response.Cookies(&quot;Type&quot;).Expires = &quot;July 31, 1997&quot;
+Response.Cookies(&quot;Type&quot;).Domain = &quot;msn.com&quot;
+Response.Cookies(&quot;Type&quot;).Path = &quot;/www/home/&quot;
+Response.Cookies(&quot;Type&quot;).Secure = FALSE
+%&gt;</pre>
+
+<h4>应用于</h4>
+<a href="Response.htm"><b>Response 对象</b></a>
+
+<script language="javascript">
+function SyncURL(){if(parent.left.document.readyState=="complete")
+parent.left.HHCtrl.SyncURL(location.href.substring(parent.left.location.href.lastIndexOf("/") + 1));
+else setTimeout("SyncURL();", 100);}if(location.protocol == "http:")SyncURL();</script>
+<hr size="1"/>
+<a href="http://www.netbox.cn" target="_blank">版权所有: 2003-2004 网络盒子</a>
+<br style="page-break-before:always">
+</body>
+</html>

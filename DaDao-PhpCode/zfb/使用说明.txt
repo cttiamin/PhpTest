@@ -1,0 +1,17 @@
+1.支付宝接口中需要修改参数的文件有 alipay_config.php 文件,index.php;买家付款成功后反馈的页面时 return_url(页面跳转),notify_url(后台通知);alipay_notify.php 和alipay_service.php 不用修改. alipay_config.php 文件中 $seller_email,$security_code,$partner 对应的分别是支付宝帐号,安全校验码和合作id ,怎么获取建  alipay_config.php 注释说明.
+ index.php 页面,需要传递参数到这个页面,需要传递的参数是 subject(商品名称),body(商品说明),out_trade_no(外部商家订单号.为了方便测试,我在index.php这个页面采用的是以日期的形式的数字字符串,这个订单号必须保证提交给支付宝的时候是唯一的,否则支付不了)
+
+ 如果你网站是实物担保交易 service 的值为 trade_create_by_buyer,与之相对应的参数为 物流信息的这三个参数(logistics_fee,logistics_payment,logistics_type),如果是虚拟物品的,对应的参数的值为 create_digital_goods_trade_p. (logistics_fee,logistics_payment,logistics_type)
+
+2.通知页面.
+ 这个事例代码中,与通知相关的页面有 alipay_notify.php(不需要修改),retureturn.php(跳转页面)
+notify_url.php(通知页面)
+
+ return_url  和 notify_url 的区别及其操作.
+
+  买家付款成功后,如果接口中指定有return_url ,买家付完款后会跳到 return_url所在的页面,这个页面可以展示给客户看,这个页面只有付款成功才会跳转.
+
+ notify_url: 服务器后台通知,这个页面是程序后台运行的(买家和卖家都看不到),买家付完款后,支付宝会调用notify_url这个页面所在的页面并把相应的参数传递到这个页面,这个页面根据支付宝传递过来的参数修改网站订单的状态,更新完订单后需要在页面上打印出一个success 给支付宝,如果反馈给支付宝的不是success,支付宝会继续调用这个页面. 
+ 
+  流程:  买家付完款(trade_status=WAIT_SELLER_SEND_GOODS)--->支付宝通知notify_url--->如果反馈给支付宝的是success(表示成功,这个状态下不再反馈,如果不是继续通知,一般第一次发送和第二次发送的时间间隔是3分钟)
+ 剩下的过程,卖家发货,买家确认收货,交易成功都是这个流程

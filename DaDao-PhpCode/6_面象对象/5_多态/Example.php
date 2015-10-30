@@ -1,0 +1,7 @@
+<?php
+class Example{
+	public function printSunyang(){
+		echo "ÈýÑï¿Æ¼¼";
+	}
+}
+?>

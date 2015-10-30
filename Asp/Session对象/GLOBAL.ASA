@@ -1,0 +1,15 @@
+< script language=vbscript runat=Server>
+sub Application_Onstart
+end sub
+< script language=vbscript runat=Server>
+sub Application_Onend
+end sub
+
+< script language=vbscript runat=Server>
+sub Session_Onstart
+end sub
+
+< script language=vbscript runat=Server>
+sub Session_Onend
+end sub
+

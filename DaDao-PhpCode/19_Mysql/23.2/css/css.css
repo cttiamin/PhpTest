@@ -1,0 +1,82 @@
+BODY {
+	BACKGROUND: #fbfbf9; TEXT-ALIGN: center
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 2em
+}
+H2 {
+	FONT-SIZE: 1em
+}
+A {
+	COLOR: #000080; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.portalbox {
+	BACKGROUND: #ccccd4; MARGIN-BOTTOM: 2px; WIDTH: 100%; height:20%;BORDER-COLLAPSE: separate
+}
+.portalbox TD {
+	BORDER-RIGHT: #fbfbf9 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #fbfbf9 1px solid; PADDING-LEFT: 10px; BACKGROUND: #dddce4 repeat-x 0px 0px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; BORDER-LEFT: #fbfbf9 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #fbfbf9 1px solid
+}
+.portalbox H3 {
+	FONT-SIZE: 1em; MARGIN: 0px 0px 5px; WHITE-SPACE: nowrap
+}
+.mainbox .headactions {
+	COLOR: #fcfefc
+}
+.pages_btns {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 6px; OVERFLOW: hidden; WIDTH: 100%; PADDING-TOP: 0px
+}
+.pages {
+	BORDER-RIGHT: #ccccd4 1px solid; BORDER-TOP: #ccccd4 1px solid; BACKGROUND: #f7f7f7; FLOAT: right; OVERFLOW: hidden; BORDER-LEFT: #ccccd4 1px solid; COLOR: #666; LINE-HEIGHT: 26px; BORDER-BOTTOM: #ccccd4 1px solid; HEIGHT: 35px
+}
+.pages A {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FLOAT: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-TOP: 0px
+}
+.pages A:hover {
+	BACKGROUND-COLOR: #fbfbf9
+}
+.pages A.prev {
+	LINE-HEIGHT: 24px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.pages A.next {
+	LINE-HEIGHT: 24px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.pages A.next {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mainbox {
+	BORDER-RIGHT: #818598 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #818598 5px solid; PADDING-LEFT: 0px; BACKGROUND: #fbfbf9; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 0px; BORDER-LEFT: #818598 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #818598 1px solid
+}
+.mainbox H1 {
+	PADDING-LEFT: 1em; BACKGROUND: #818598 repeat-x 0px 0px; COLOR: #fcfefc; LINE-HEIGHT: 35px
+}
+.mainbox H3 {
+	PADDING-LEFT: 1em; BACKGROUND: #818598 repeat-x 0px 0px; COLOR: #fcfefc; LINE-HEIGHT: 31px
+}
+.mainbox TABLE {
+	WIDTH: 95%
+}
+.mainbox THEAD TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #dddde4; PADDING-BOTTOM: 2px; COLOR: #000; LINE-HEIGHT: 22px; PADDING-TOP: 2px
+}
+.mainbox TBODY TD {
+	PADDING-RIGHT: 5px; BORDER-TOP: #b6b6c0 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+
+.threadlist TBODY TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 1px; COLOR: #000; PADDING-TOP: 1px; BORDER-BOTTOM: #fbfbf9 1px solid; BACKGROUND-COLOR: #fcfefc
+}
+.threadlist TBODY TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}

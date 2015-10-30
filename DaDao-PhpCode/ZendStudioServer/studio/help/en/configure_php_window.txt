@@ -1,0 +1,10 @@
+<p><b>Configure PHP Settings</b></p>
+<p>The PHP Settings screen is the configuration tool for customizing PHP and Zend products, by modifying directives in the php.ini and zend.ini files.<br>
+Configuration options are separated by type in expandable lists. The [+/-] signs indicate if there are more options related to that list item or not.<br>
+Clicking on the Plus Icon [+] will expand the list to expose the different options and where applicable, input fields are added to change an option's value. Alternatively, clicking the Minus Icon [-] will contract the list leaving only the option type visible.<br><br>
+Most of the directives can be viewed and modified. Directives that should not be changed under any circumstances are disabled (grayed out).</p>
+<p><b>PHP Section</b><br>
+The PHP section reflects the exact content of the php.ini on the selected server. Changing directives in this section will change the php.ini settings.</p>
+<p><b>ZEND Section</b><br>
+This section contains Zend Product directives. Changes to this section are applied to the zend.ini or the php.ini according to their origin.</p>
+<p><b>Note</b>: Changes to this screen require entering the php.ini password, as defined in the 'zend_gui_password' directive. To change the password please see the User Guide.</p>

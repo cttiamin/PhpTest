@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="GENERATOR" content="Zend Studio" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBk" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl;?>/public/css/css.css" />
+<title><?php echo $this->escape($this->title);?></title>
+<script type="text/javascript" language="javascript">
+function priceIsNum(){
+	var match = /^[0-9]+.?[0-9]*$/;
+	var price=document.getElementById("book_price").value;
+	if(document.getElementById("book_name").value=="")
+	{
+		alert("书籍名不能为空");
+		return false;
+	}
+	if(document.getElementById("book_author").value=="")
+	{
+		alert("作者姓名不能为空");
+		return false;
+	}
+	if(!match.test(price))
+	{
+		alert("书籍价格必须是数字格式");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<div align="center">
+	<table>
+		<form action="<?=$this->url(array("controller"=>"Book","action"=>"saveupdatebook"));?>" method="POST"  onsubmit="return priceIsNum()">
+			<tr>
+				<td><input type="hidden" name="book_id" value="<?=$this->book["book_id"]?>"/></td>
+			</tr>	
+			<tr>
+				<td>书名</td>
+				<td><input type="text" name="book_name" id="book_name" value="<?=$this->book["book_name"]?>"/></td>
+			</tr>	
+			<tr>
+				<td>作者</td>
+				<td><input type="text" name="book_author" id="book_author" value="<?=$this->book["book_author"]?>"/></td>
+			</tr>				
+			<tr>
+				<td>价格</td>
+				<td><input type="text" name="book_price" value="<?=$this->book["book_price"]?>"/>（元）</td>
+			</tr>							
+			<tr>
+				<td>详细信息</td>
+				<td><textarea name="book_description" cols="30" rows="10"><?=$this->book["book_description"]?></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="修改书籍"/></td>
+				<td><input type="reset" name="reset" value="重填信息"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="返回" onclick="javascript:history.go(-1)" /></td>
+			</tr>
+		</form>
+	</table>
+</div>	
+</body>
+</html>

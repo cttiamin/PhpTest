@@ -1,0 +1,280 @@
+<?php /* Smarty version 2.6.26, created on 2009-12-25 18:37:12
+         compiled from news_display.html */ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #F3F3F3;
+}
+.d_line {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	font-size: 14px;
+	color: #333333;
+}
+a.hui_12:link {
+	font-size: 12px;
+	line-height: 20px;
+	color: #666666;
+	text-decoration: underline;
+}
+a.hui_12:hover {
+	font-size: 12px;
+	line-height: 20px;
+	color: #990000;
+	text-decoration: underline;
+}
+a.hui_12:visited {
+	font-size: 12px;
+	line-height: 20px;
+	color: #666666;
+	text-decoration: underline;
+}
+a.blue_14:link {
+	font-size: 14px;
+	line-height: 22px;
+	color: #000066;
+	text-decoration: none;
+}
+a.blue_14:visited {
+	font-size: 14px;
+	line-height: 20px;
+	color: #0000CC;
+	text-decoration: none;
+}
+.font_12 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+a.black_14:link {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+a.black_14:hover {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: underline;
+}
+a.black_14:visited {
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+a.blue_14:hover {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000033;
+	text-decoration: underline;
+}
+.font2 {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.td_02 {	border: 1px solid #949494;
+}
+.hui_12 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+.rgbg_01 {
+	line-height: 14px;
+	color: #FFFFFF;
+	background-image: url(images/news_mj_10.jpg);
+	background-repeat: repeat-x;
+	height: 22px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	width: 120px;
+}
+.rgbg_02 {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+	height: 21px;
+	width: 120px;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-image: url(images/menu_line.jpg);
+	background-repeat: no-repeat;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="978" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="5" colspan="3" bgcolor="#0D317B"></td>
+  </tr>
+  <tr>
+    <td width="87" height="25" align="right" background="images/index_03.jpg" class="d_line"><span class="font_12"><font color="#6600CC">本站快讯</font></span><font color="#6600CC">：</font></td>
+    <td width="697" align="left" background="images/index_03.jpg" class="d_line"><marquee direction="left" width="650" scrollamount="4" ><a href="#" class="blue_14">轻轻的我来了，正如我悄悄地去用猴皮筋做个弹弓打你们家的玻璃</a>
+    </marquee></td>
+    <td width="194" align="center" background="images/index_03.jpg" class="d_line"><a href="#" class="hui_12">[设为首页]</a>&nbsp;&nbsp;<a href="#" class="hui_12">[加入收藏夹]</a></td>
+  </tr>
+  <tr>
+    <td height="102" colspan="3" class="d_line"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="24%" align="center"><img src="images/index_07.jpg" width="209" height="88" alt="" /></td>
+        <td width="60%"><img src="images/index_09.jpg" width="576" height="88" alt="" /></td>
+        <td width="16%"><a href="#" class="hui_12">·我在翔宇学到什么？</a><br />
+          <a href="#" class="hui_12">·我为什么要选择翔宇？</a><br />
+          <a href="#" class="hui_12">·翔宇文化名字由来？</a><br />
+          <a href="#" class="hui_12">·LOGO标识解疑？</a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="30" colspan="3" align="center" background="images/index_13.jpg" class="d_line"><a href="#" class="black_14">首页</a> | <a href="#" class="black_14">翔宇动态</a> | <a href="#" class="black_14">翔宇风采</a> | <a href="#" class="black_14">专业介绍</a> | <a href="#" class="black_14">课程体系</a> | <a href="#" class="black_14">师资力量</a> | <a href="#" class="black_14">莘莘学子</a> | <a href="#" class="black_14"> 加入翔宇</a> <a href="#"></a> | <a href="#" class="black_14">常见问题</a> | <a href="#" class="black_14">留言反馈</a> | <a href="#" class="black_14">联系我们</a></td>
+  </tr>
+  <tr>
+    <td height="25" colspan="3" bgcolor="#5178E1">&nbsp;</td>
+  </tr>
+</table>
+<table width="978" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="5"></td>
+  </tr>
+  <tr>
+    <td><img src="images/index_15.jpg" width="978" height="92" alt="" /></td>
+  </tr>
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table>
+<table width="978" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="208" align="center" valign="top"><table width="100%" height="130" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="130" align="center" valign="top">
+		  <script language="javascript" src="ad1.html">
+		  </script>		  </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="8"></td>
+        </tr>
+      </table><table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+      <tr>
+        <td height="25" align="center" background="images/index_03.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="13%" align="center" valign="top"><img src="images/index_54.jpg" width="11" height="14" alt="" /></td>
+            <td width="55%" align="left" class="hui_12">学员感悟</td>
+            <td width="32%" align="center"><img src="images/index_63.jpg" width="43" height="13" alt="" /></td>
+          </tr>
+        </table></td>
+        </tr>
+      <tr>
+        <td height="232" align="left" bgcolor="#FFFFFF"><a href="#" class="blue_14">·北京楼盘定价暗战 楼市库存</a> <br />
+          <a href="#" class="blue_14">·京高端住宅沉淀资金844</a> <br />
+          <a href="#" class="blue_14">·北京建委负责人称北京不宜</a> <br />
+          <a href="#" class="blue_14">·北京楼盘定价暗战 楼市库存创</a><br />
+          <a href="#" class="blue_14">·京高端住宅沉淀资金844亿</a> <br />
+          <a href="#" class="blue_14">·北京建委负责人称北京不宜</a> <br />
+          <a href="#" class="blue_14">·北京楼盘定价暗战 楼市库存<br />
+          ·北京楼盘定价暗战 楼市库存创</a><br />
+          <a href="#" class="blue_14">·京高端住宅沉淀资金844亿</a> <br />
+          <a href="#" class="blue_14">·北京建委负责人称北京不宜</a> <br />
+          <a href="#" class="blue_14">·北京楼盘定价暗战 楼市库存 <br />
+·北京楼盘定价暗战 楼市库存</a> <br />
+<a href="#" class="blue_14">·北京楼盘定价暗战 楼市库存</a></td>
+      </tr>
+      
+    </table>
+    </td>
+    <td align="center" valign="top"><table width="99%" border="0" cellpadding="0" cellspacing="1" bgcolor="#7799F0">
+      <tr>
+        <td height="27" align="left" background="images/news_mj_22.jpg"><table width="100%"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="30"></td>
+            <td align="center"  nowrap="nowrap" class="rgbg_01">新闻中心</td>
+            <td align="center" class="rgbg_02" >企业文化</td>
+            <td class="rgbg_02" >&nbsp; </td>
+            <td>&nbsp;</td>
+            <td >&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="504" valign="top" bgcolor="#FFFFFF"><table width="735" height="53" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="40" align="center"><h2><?php echo $this->_tpl_vars['title']; ?>
+</h2></td>
+          </tr>
+          <tr>
+            <td height="13"><?php echo $this->_tpl_vars['content']; ?>
+</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="978" height="233" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="10" align="left" valign="top"></td>
+  </tr>
+  <tr>
+    <td height="65" align="left" valign="top"><table width="978" height="65" border="0" cellpadding="0" cellspacing="0" class="td_02">
+      <tr>
+        <td width="145" height="62" align="center" bgcolor="#949494" class="black_14">图片链接</td>
+        <td width="205" align="center"><img src="images/index_67.jpg" width="109" height="46" alt="" /></td>
+        <td width="171" align="center"><img src="images/index_67.jpg" width="109" height="46" alt="" /></td>
+        <td width="171" align="center"><img src="images/index_67.jpg" width="109" height="46" alt="" /></td>
+        <td width="131" align="center"><img src="images/index_67.jpg" width="109" height="46" alt="" /></td>
+        <td width="152" align="center"><img src="images/index_67.jpg" width="109" height="46" alt="" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td height="35" align="left" valign="top"><table width="978" height="35" border="0" cellpadding="0" cellspacing="0" class="td_02">
+      <tr>
+        <td width="145" align="center" bgcolor="#949494" class="black_14">文字链接</td>
+        <td width="833">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue_14">&nbsp;<a href="#" class="blue_14">清华大学</a></span> &nbsp;&nbsp;<a href="#" class="blue_14">北京大学</a> &nbsp;<span class="black_14">&nbsp;<a href="#" class="blue_14">北京师范</a></span> &nbsp;&nbsp;<a href="#" class="blue_14">天津师范</a> &nbsp;&nbsp;<a href="#" class="blue_14">河北示范</a> &nbsp;&nbsp;<a href="#" class="blue_14">XX大学</a> &nbsp;&nbsp;<a href="#" class="blue_14">XXX大学</a>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td height="8" valign="middle" bgcolor="#0D317B">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="90" align="center" valign="middle" class="font_12">版权所有：翔宇文化传媒工作室<br />
+      联系地址：北京市海淀区双榆树公园内
+      邮编：100067<br />
+      联系电话：110120119 传 真：(010)54385438 <br />
+    京ICP备XXXXXX号</td>
+  </tr>
+</table>
+</body>
+</html>

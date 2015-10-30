@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>其他常用数组函数</title>
+</head>
+<body>
+<pre>
+<?php
+$numbers=range(0,2);
+print_r($numbers);
+?>
+</pre>
+</body>
+</html>

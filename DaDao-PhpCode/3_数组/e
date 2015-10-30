@@ -1,0 +1,7 @@
+<?php
+	$city=array("长春","吉林","大连","哈尔滨");
+	reset($city);    //将数组内部的指针例退回第一个单元，并返回第一个值
+	while(list($key,$value)=each($city)){
+		echo "$key: $value <br>";
+	}
+?>

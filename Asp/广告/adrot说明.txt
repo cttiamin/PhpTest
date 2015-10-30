@@ -1,0 +1,17 @@
+REDIRECT adrotator.asp   	
+WIDTH  440
+HEIGHT 400 
+BORDER 1 
+*
+01.jpg
+http://www.163.com
+ÍøÒ×
+3
+02.jpg
+http://www.sina.com.cn
+ĞÂÀËÍø
+3
+03.jpg
+http://www.zol.com
+Sponsored by Flyteworks
+3

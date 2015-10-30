@@ -1,0 +1,15 @@
+< script language=vbscript runat=Server>   'runat=Server 说明是在服务器端响应
+sub Application_Onstar						'在网站启动是触发, 可配置全局初始化一次的操作
+end sub
+< script language=vbscript runat=Server>
+sub Application_Onend						'用在网站运行中的总结和检测
+end sub
+
+< script language=vbscript runat=Server>
+sub Session_Onstart							'对一每一个用户访问的的时候
+end sub
+
+< script language=vbscript runat=Server>
+sub Session_Onend							'用户离开，连接消失的时候
+end sub					
+

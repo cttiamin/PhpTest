@@ -1,0 +1,219 @@
+BODY { 
+      font-family:Arial; 
+      background-color:#ffffff;  }
+H1 { 
+    font-weight:bold; 
+    font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+    background-color:Transparent; 
+    border-bottom-style:Solid; 
+    color:#93b7e2; 
+    margin-left:1; 
+    font-size:12pt; 
+    border-bottom-color:#93b7e2; 
+    border-bottom-width:4px;  }
+LI.kadov-H1 { 
+             font-weight:bold; 
+             font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+             color:#93b7e2; 
+             font-size:12pt;  }
+H2 { 
+    font-weight:bold; 
+    font-size:11pt; 
+    font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+    margin-top:7pt; 
+    margin-bottom:7pt; 
+    color:#3491c7;  }
+LI.kadov-H2 { 
+             font-weight:bold; 
+             font-size:11pt; 
+             font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+             color:#3491c7;  }
+H3 { 
+    font-weight:bold; 
+    font-size:10pt; 
+    font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+    background-color:Transparent; 
+    color:#666666;  }
+LI.kadov-H3 { 
+             font-weight:bold; 
+             font-size:10pt; 
+             font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+             color:#666666;  }
+H4 { 
+    font-weight:bold; 
+    font-size:12.0pt; 
+    font-family:Arial;  }
+LI.kadov-H4 { 
+             font-weight:bold; 
+             font-size:12.0pt;  }
+H5 { 
+    font-weight:bold; 
+    font-size:10.0pt; 
+    font-family:Arial;  }
+LI.kadov-H5 { 
+             font-weight:bold; 
+             font-size:10.0pt;  }
+H6 { 
+    font-weight:bold; 
+    font-size:8.0pt; 
+    font-family:Arial;  }
+LI.kadov-H6 { 
+             font-weight:bold; 
+             font-size:8.0pt;  }
+P { 
+   margin-top:1; 
+   margin-bottom:1; 
+   font-size:10pt; 
+   font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+   color:#323232;  }
+LI.kadov-P { 
+            font-size:10pt; 
+            font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+            color:#323232;  }
+A.expandspot { 
+              cursor:hand; 
+              font-style:italic; 
+              x-text-underline:off; 
+              x-text-overline:off; 
+              x-text-line-through:off; 
+              font-size:10pt; 
+              font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+              color:#ff8e00; 
+              text-decoration:none none none;  }
+SPAN.expandtext { 
+                 font-style:italic; 
+                 font-weight:normal; 
+                 font-size:10pt; 
+                 font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+                 color:#ffffff;  }
+A.dropspot { 
+            cursor:hand; 
+            font-style:italic; 
+            x-text-underline:off; 
+            x-text-overline:off; 
+            x-text-line-through:off; 
+            font-size:10pt; 
+            font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+            color:#ff8e00; 
+            text-decoration:none none none;  }
+A.glossterm { 
+             cursor:hand; 
+             font-style:italic; 
+             x-text-underline:off; 
+             x-text-overline:off; 
+             x-text-line-through:off; 
+             font-size:10pt; 
+             font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+             color:#848484; 
+             text-decoration:none none none;  }
+SPAN.glosstext { 
+                font-style:italic; 
+                font-weight:normal; 
+                font-size:10pt; 
+                font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+                color:#848484;  }
+OL { 
+    margin-top:0px; 
+    margin-bottom:0px; 
+    font-size:10pt; 
+    font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+    color:#323232;  }
+UL { 
+    margin-top:0px; 
+    margin-bottom:0px; 
+    font-size:10pt; 
+    font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+    color:#323232;  }
+P.Note { 
+        font-weight:bold; 
+        font-style:normal; 
+        color:#ffffff; 
+        border-top-style:Solid; 
+        border-top-width:4px; 
+        border-bottom-style:Solid; 
+        border-bottom-width:4px; 
+        border-top-color:#93b7e2; 
+        border-bottom-color:#93b7e2; 
+        background-color:#93b7e2;  }
+LI.kadov-P-CNote { 
+                  font-weight:bold; 
+                  font-style:normal; 
+                  color:#ffffff;  }
+P.NoteText { 
+            background-color:#ddeaf4;  }
+LI.kadov-P-CNoteText {  }
+P.footertext { 
+              font-size:8pt; 
+              text-align:Center; 
+              border-top-style:Solid; 
+              border-top-width:4px; 
+              border-top-color:#93b7e2;  }
+LI.kadov-P-Cfootertext { 
+                        font-size:8pt; 
+                        text-align:Center;  }
+P.ListBullet1 { 
+               list-style:square;  }
+LI.kadov-P-CListBullet1 { 
+                         list-style:square;  }
+P.ListBullet2 { 
+               list-style:disc; 
+               margin-left:12pt;  }
+LI.kadov-P-CListBullet2 { 
+                         list-style:disc;  }
+P.Hyperlinkintopic { 
+                    color:#ff8e00; 
+                    text-align:Right; 
+                    x-text-underline:Off; 
+                    text-decoration:none;  }
+LI.kadov-P-CHyperlinkintopic { 
+                              color:#ff8e00; 
+                              text-align:Right; 
+                              x-text-underline:Off; 
+                              text-decoration:none;  }
+A:active { 
+          font-size:10pt; 
+          font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+          color:#5b9beb; 
+          x-text-underline:Off; 
+          text-decoration:none;  }
+A:hover { 
+         font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+         background-color:Transparent; 
+         color:#5b9beb; 
+         x-text-underline:Normal; 
+         font-size:10pt; 
+         text-decoration:underline;  }
+A:link { 
+        font-size:10pt; 
+        font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+        background-color:Transparent; 
+        color:#5b9beb; 
+        x-text-underline:Off; 
+        text-decoration:none;  }
+A:visited { 
+           font-size:10pt; 
+           font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+           background-color:Transparent; 
+           color:#5b9beb; 
+           x-text-underline:Off; 
+           text-decoration:none;  }
+A.popupspot { 
+             font-size:10pt; 
+             font-weight:bold; 
+             font-style:normal; 
+             font-family:Verdana, Arial, "Lucida Sans Unicode" , sans-serif; 
+             color:#5b9beb; 
+             x-text-underline:Off; 
+             text-decoration:none;  }
+ol ol { 
+       margin-top:1; 
+       margin-bottom:1;  }
+ol ul { 
+       margin-top:1; 
+       margin-bottom:1;  }
+ul ul { 
+       margin-top:1; 
+       margin-bottom:1;  }
+ul ol { 
+       margin-top:1; 
+       margin-bottom:1;  }

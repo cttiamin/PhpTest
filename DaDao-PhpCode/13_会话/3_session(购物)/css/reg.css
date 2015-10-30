@@ -1,0 +1,64 @@
+body { 
+background: #FFFFFF; text-align: center;
+ }
+body, td, input, textarea, select, button { 
+color: #000; font: 12px/1.6em Helvetica, Arial, sans-serif; 
+}
+body, ul, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset {
+ margin: 0; padding: 0; 
+ }
+h1, h2, h3, h4, h5, h6 { 
+font-size: 2em; 
+}
+#menu li, .popupmenu_popup li, #announcement li, .portalbox li, .tabs li, .postmessage fieldset li, .side li, .formbox li, .notice li { 
+list-style: none; 
+}
+a { 
+color: #000; text-decoration: none; 
+}
+a:hover { text-decoration: underline; }
+a img { border: none; }
+em, cite, strong, th { 
+font-style: normal; font-weight: normal; 
+}
+table { 
+empty-cells: show; border-collapse: collapse;
+ }
+.mainbox { 
+background: #FFF; border: 1px solid #9DB3C5; padding: 1px; margin-bottom: 10px; 
+}
+.mainbox h1, .mainbox h3, .mainbox h6 { line-height: 31px; padding-left: 1em; background: #818598; background-repeat: repeat-x; background-position: 0 0; color: #FFF; }
+.mainbox h1 a, .mainbox h3 a { color: #FFF; }
+.mainbox table { width: 100%; }
+.forumlist table, .threadlist table { border-collapse: separate; }
+.mainbox thead th, .mainbox thead td { background: #E8F3FD; padding: 2px 5px; line-height: 22px; color: #666; }
+.mainbox thead.category th, .mainbox thead.category td { background: #E8F3FD; }
+.mainbox thead.separation th, .mainbox thead.separation td { border-top: 1px solid #CAD9EA }
+.mainbox tbody th, .mainbox tbody td { border-top: 1px solid #CAD9EA; padding: 5px; }
+.mainbox tbody cite, .mainbox tbody em { line-height: 1.3em; }
+.forumlist tbody strong, .threadlist tbody strong , .formbox tbody strong  { color: #090; }
+	
+	
+
+
+
+
+
+	
+	
+
+button { border: 1px solid; border-color: #E8E8E8 #999 #999 #E8E8E8; background: #E8F3FD; height: 2em; line-height: 2em; cursor: pointer; }
+#postsubmit, button.submit,button.reset { margin-right: 1em; border: 1px solid; border-color: #FFFDEE #FDB939 #FDB939 #FFFDEE; background: #FFF8C5; color: #090; padding: 0 10px; }
+
+
+
+
+
+.formbox th { width: 180px; text-align: left; }
+	.formbox th, .formbox td { padding: 5px; }
+	.formbox th, .formbox td { border-bottom: 1px solid #CAD9EA; }
+	.formbox table a { color: #003399; }
+.formbox label { cursor: pointer; }
+
+
+

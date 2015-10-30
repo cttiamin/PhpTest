@@ -1,0 +1,17 @@
+ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	display: block;
+	margin: 0px;
+	list-style-type: none;
+	height: 25px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	background-image: url(../images/index_25.jpg);
+	background-repeat: no-repeat;
+}

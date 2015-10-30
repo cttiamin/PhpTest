@@ -1,0 +1,74 @@
+body,td,th {
+	font-size: 12px;
+}
+a.a12_1:link {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+a.a12:link {
+	font-size: 12px;
+	line-height: 20px;
+	color: #3366FF;
+	text-decoration: none;
+}
+a.a12:hover {
+	font-size: 12px;
+	line-height: 20px;
+	color: #0000CC;
+	text-decoration: underline;
+}
+a.a12:visited {
+	font-size: 12px;
+	line-height: 20px;
+	color: #3333FF;
+}
+.s_line {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #BCC9D1;
+}
+.font01 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+.d_line {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BCC9D1;
+}
+.daohang {
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.daohang:link {
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+	height: 20px;
+	width: 60px;
+}
+a.daohang:hover {
+	font-size: 14px;
+	line-height: 20px;
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+a.a12_1:visited {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+.STYLE1 {color: #3D779D}
+a.a12_1:hover {
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: underline;
+}

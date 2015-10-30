@@ -1,0 +1,81 @@
+td,p,input,select,body {
+	font-size:12px;
+	color: #333333;
+	line-height: 150%;
+}
+
+A:link {font-size:12px;text-decoration:none;color:#333333;}
+A:visited {font-size:12px;text-decoration:none;color:#333333;}
+A:hover {font-size:12px;text-decoration:none;color:#cc9966;}
+
+.font1 {font:12px/180% "宋体";color:#333333} 
+.font2 {
+	font:bold 24px "宋体";
+	text-decoration: none;
+	color: #006600;
+
+} 
+
+A.link1:link {font-size:12px;text-decoration:none;color:#333333;}
+A.link1:visited {font-size:12px;text-decoration:none;color:#000000;}
+A.link1:hover {font-size:12px;text-decoration:none;color:#986A01;}
+
+A.link2:link {font-size:12px;text-decoration:none;color:#666666;}
+A.link2:visited {font-size:12px;text-decoration:none;color:#333333;}
+A.link2:hover {font-size:12px;text-decoration:none;color:#986A01;}
+
+
+}
+
+
+.t1 {font:12px 宋体;color=000000} 
+.t2 {font:12px 宋体;color:ffffff} 
+.bt1 {color=000000
+	font-size: 14px;
+	font-weight: bold;
+	font-size: 14px;
+
+} 
+.bt2 {font:14px 宋体;color:ffffff} 
+
+A.a01:link {font-size:12px;text-decoration:none;color:#000000;}
+A.a01:visited {font-size:12px;text-decoration:none;color:#000000;}
+A.a01:hover {font-size:12px;text-decoration:none;color:#cc9966;}
+
+A.a02:link {font-size:12px;text-decoration:none;color:#ffffff;}
+A.a02:visited {font-size:12px;text-decoration:none;color:#ffffff;}
+A.a02:hover {font-size:12px;text-decoration:none;color:#cc9966;}
+
+A.a11:link {font-size:12px;text-decoration:none;color:#000000;}
+A.a11:visited {font-size:12px;text-decoration:none;color:#000000;}
+A.a11:hover {font-size:12px;text-decoration:none;color:#cc9966;}
+
+A.a12:link {font-size:12px;text-decoration:none;color:#ffffff;}
+A.a12:visited {font-size:12px;text-decoration:none;color:#ffffff;}
+A.a12:hover {font-size:12px;text-decoration:none;color:#cc9966;}
+.line {
+	background-attachment: fixed;
+	background-image: url(images/in_hx.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+.shadow {
+	filter: DropShadow(Color=#c8c8c8, OffX=1, OffY=1);
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 150%;
+	color: #006600;
+
+
+}
+p { font-size:12px;color: #000000}
+.input1 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #888888;
+	background-color: #95B037;
+	border-top: 1px solid #6C8028;
+	border-right: 1px solid #8EA934;
+	border-bottom: 1px solid #8EA934;
+	border-left: 1px solid #6C8028;
+}

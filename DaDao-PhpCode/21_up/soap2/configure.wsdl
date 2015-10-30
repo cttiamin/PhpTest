@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='GBK'?>
+<definitions name="configure" targetNamespace="urn:configure" xmlns:typens="urn:configure" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<!--注册服务端请求、响应的方法和参数-->
+	<message name="hello">
+		<!--参数名称与类型-->
+		<part name="name" type='xsd:string'/>
+	</message>
+	<message name="helloResponse">
+		<part name="helloReturn" type='xsd:string'/>
+	</message>
+	<!--WSDL连接埠类型-->
+	<portType name="serverPortType">
+		<operation name="hello">
+			<input message="typens:hello"/>
+			<output message="typens:helloResponse"/>
+		</operation>
+	</portType>
+	
+	<!--绑定连接类型，指定方法-->
+	<binding name="serverBinding" type="typens:serverPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="hello">
+			<soap:operation soapAction="urn:serverAction"/>
+			<input>
+				<soap:body namespace="urn:configure" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body namespace="urn:configure" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	<!--配置服务端-->
+	<service name="configureService">
+	<port name="serverPort" binding="typens:serverBinding">
+	<soap:address location="http://localhost/soap2/server.php"/>
+	</port>
+	</service>
+</definitions>

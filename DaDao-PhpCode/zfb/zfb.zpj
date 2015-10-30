@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<project version="5.5" encoding="default">
+	<project_entity ID="SourceControl">
+		<encodingStyle value="CVS"/>
+	</project_entity>
+	<project_entity ID="debugger">
+		<connectionInfo use_defaults="false" tempFilesLocation="C:\Documents and Settings\Administrator" debug_mode="remote" serverHost="http://localhost/" port="10000"/>
+		<breakpoints/>
+		<watches/>
+	</project_entity>
+	<project_entity ID="project_roots">
+		<vfile name="G:\php-练习\zfb"/>
+	</project_entity>
+	<project_entity ID="bookmarks"/>
+	<project_entity ID="javaBridge" JRE_Name="1.5.0_06"/>
+	<project_entity ID="Subversion">
+		<svnCmdArguments>
+			<SubversionCommand commandType="update"/>
+			<SubversionCommand commandType="commit"/>
+			<SubversionCommand commandType="add"/>
+			<SubversionCommand commandType="status"/>
+			<SubversionCommand commandType="diff"/>
+			<SubversionCommand commandType="delete"/>
+			<SubversionCommand commandType="revert"/>
+			<SubversionCommand commandType="resolve"/>
+		</svnCmdArguments>
+	</project_entity>
+	<project_entity ID="editor_component" selectedEditor="4">
+		<openEditors>
+			<editor fileName="G:\php-练习\zfb\alipay_config.php" caretPosition="347" clone="false" encoding="default"/>
+			<editor fileName="G:\php-练习\zfb\alipay_notify.php" caretPosition="3009" clone="false" encoding="default"/>
+			<editor fileName="G:\php-练习\zfb\alipay_service.php" caretPosition="1280" clone="false" encoding="default"/>
+			<editor fileName="G:\php-练习\zfb\index.php" caretPosition="709" clone="false" encoding="default"/>
+			<editor fileName="G:\php-练习\zfb\notify_url.php" caretPosition="142" clone="false" encoding="default"/>
+			<editor fileName="G:\php-练习\zfb\return_url.php" caretPosition="724" clone="false" encoding="default"/>
+		</openEditors>
+	</project_entity>
+	<project_entity ID="CVS">
+		<lastArguments>
+			<CVSCommand commandType="update"/>
+			<CVSCommand commandType="commit"/>
+			<CVSCommand commandType="add"/>
+			<CVSCommand commandType="status"/>
+			<CVSCommand commandType="diff"/>
+		</lastArguments>
+	</project_entity>
+</project>

@@ -1,0 +1,16 @@
+如果你想让你的IIS支持wml,做个wap网站,只需作小小的改变就行了.虽然目前支持wml的虚拟主机极少,但是自己在本机上玩玩也好的. 
+首先在打开IIS,然后在默认网站的属性--HTTP头--MMIE映射--文件类型--添加注册文件的类型:
+
+.wbmp   image/vnd.wap.wbmp
+
+.wml     text/vnd.wap.wml
+
+.wmlc    application/vnd.wap.wmlc
+
+.wmls    text/vnd.wap.wmlscript
+
+.wsc     application/vnd.wap/wmlscriptc
+
+.wmlsc   application/vnd.wap.wmlscriptc
+
+现在你就可以在你的站点添加wml文件了.可以用手机模拟器来浏览,或者opera浏览器浏览.如果你的主机是对外发布的,那你就可以用手机来浏览你的网站了. 

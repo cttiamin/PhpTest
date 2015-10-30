@@ -1,0 +1,22 @@
+body,td,th {
+	font-size: 12px;
+	line-height: 20px;
+}
+a:link {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: underline;
+}
+a:visited {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}

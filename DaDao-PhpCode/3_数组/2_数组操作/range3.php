@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>其他常用数组函数</title>
+</head>
+<body>
+<pre>
+<?php
+$letters=range("A","C");
+print_r($letters);
+?>
+</pre>
+</body>
+</html>

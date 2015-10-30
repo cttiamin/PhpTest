@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>其他常用数组函数</title>
+</head>
+<body>
+<pre>
+<?php
+$step=range(0,12,5);
+print_r($step);
+?>
+</pre>
+</body>
+</html>

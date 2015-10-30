@@ -1,0 +1,10 @@
+<script type="text/javascript" src="ajaxcls.js"></script>
+
+<form id="form1" name="form1" method="post" action="">
+ ÓÃ»§Ãû£º <input type="text" name="textfield"  onblur="startRequest('ajaxcls','eee.php?name='+this.value);"/>
+ ÃÜÂë£º <input type="text" name="textfield"  onblur="startRequest('pwd','eee.php?name='+this.value);"/>
+</form>
+<div id="ajaxcls"></div>
+<div id="pwd"></div>
+<script type="text/javascript">startRequest('ajaxcls','sss.php');</script>
+<script type="text/javascript">startRequest('pwd','sss.php');</script>

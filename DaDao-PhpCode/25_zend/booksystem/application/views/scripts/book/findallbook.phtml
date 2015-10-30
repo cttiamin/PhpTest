@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="GENERATOR" content="Zend Studio" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBk" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl;?>/public/css/css.css" />
+<title><?php echo $this->escape($this->title);?></title>
+</head>
+<body>
+<div align="center">
+<h3><a href="<?=$this->url(array("controller"=>"Book","action"=>"addbook"))?>">添加书籍</a></h3>
+	<table  border="1" cellspacing="0" bordercolor="#996600" id="allbook">
+		<tr id="tr1">
+			<td>书的索引</td>
+			<td>书名</td>
+			<td>作者</td>
+			<td>价格</td>
+			<td class="xiangxi">详细信息</td>
+			<td>修改信息</td>
+			<td>删除书籍</td>
+		</tr>
+		<tr>
+ <?php if (count($this->paginator)): ?>
+ <?php foreach ($this->paginator as $book): ?>  </tr>
+		<tr>
+			<td><?=$book["book_id"]?></td>
+			<td><?=$book["book_name"]?></td>
+			<td><?=$book["book_author"]?></td>
+			<td><?=$book["book_price"]?>元</td>
+			<td><?=$book["book_description"]?></td>
+			<td><a href="<?=$this->url(array("controller"=>"Book","action"=>"updatebook","book_id"=>$book["book_id"]));?>">修改</a></td>
+			<td><a href="<?=$this->url(array("controller"=>"Book","action"=>"deletebook","book_id"=>$book["book_id"]));?>">删除</a></td>			
+		</tr>
+<?php endforeach; ?>
+<?php endif; ?>	
+	</table>
+<?=$this->paginationControl($this->paginator, 'Sliding', 'book/my_pagination_control.phtml'); ?>	
+<h3><a href="<?=$this->url(array("controller"=>"Login","action"=>"index"))?>">退出系统</a></h3>	
+</div>	
+</body>
+</html>

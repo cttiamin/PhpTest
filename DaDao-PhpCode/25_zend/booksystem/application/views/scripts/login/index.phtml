@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="GENERATOR" content="Zend Studio" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl;?>/public/css/css.css" />
+<script type="text/javascript" language="javascript">
+function validate(){
+	if(""==document.getElementById("admin_name").value){
+		alert("请输入管理员姓名");
+		return false;
+	}
+	if(""==document.getElementById("admin_password").value){
+		alert("请输入管理员密码");
+		return false;
+	}
+	return true;
+}
+</script>
+<title><?php echo $this->escape($this->title); ?></title>
+</head>
+<body >
+<div id="bodyDiv" align="center">
+<h1>管理员登录</h1>
+<h3><font color="Red" size="3"><?=$this->escape($this->error);?></font></h3>
+	<table id="loginTable">
+	<form action="<?=$this->url(array("controller"=>"Login","action"=>"login"),null,true);?>" method="POST" onsubmit="return validate()">
+		<tr>
+			<td>姓名</td>
+			<td><input type="text" name="admin_name" /></td>
+		</tr>
+		<tr>
+			<td>密码</td>
+			<td><input type="password" name="admin_password" /></td>
+		</tr>
+		<tr>
+			<td><input  type="submit" name="submit" value="登录"/></td>
+		</tr>
+	</form>
+	</table>
+</div>	
+</body>
+</html>

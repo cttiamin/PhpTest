@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>	<!--¶¨ÒåµÄÒ»¸öÆµµÀ-->
+	<title>Sunyang Home</title>  <!--ÆµµÀÃû³Æ-->
+	<link>http://www.sunyang.net.cn</link>  <!--ÆµµÀµØÖ·-->
+	<description>Sunyang Home Page</description>  <!--ÆµµÀ¼ò½é-->
+	<item>	<!--ÆµµÀÖÐ¶¨ÒåÏî-->
+		<title>Sunyang Books</titel><!--ÏîµÄÃû³Æ-->
+		<link>http://Boooks.sunyang.net.cn</link><!--ÏîµÄµØÖ·-->
+		<description>Sunyang Books Index</description><!--ÏîµÄ¼ò½é-->
+	</item>
+</channel>
+</rss>

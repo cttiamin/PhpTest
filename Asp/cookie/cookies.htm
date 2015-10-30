@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+</head>
+
+<body>
+<H2>Cookies 集合</H2>
+<P><B>Cookies </B>集合允许用户检索在 HTTP 请求中发送的 cookie 的值</P>
+<H4>语法</H4>
+<PRE><B>Request.Cookies</B>(<I>cookie</I>)[(<I>key</I>)|<B>HasKeys</B>]
+ </PRE>
+<H4>参数</H4>
+<I>cookie</I>
+<dl>
+  <DD>指定要检索其值的 cookie<BR>
+      <I>key</I>
+  <DD>可选参数，用于从 cookie 字典中检索子关键字的值
+      <H4>注释</H4>
+      <P>可以通过包含一个 <I>key</I> 值来访问 cookie 字典的子关键字。如果访问 cookie 字典时未指定 <I>key</I>，则所有关键字都会作为单个查询字符串返回。例如，如果 MyCookie有两个关键字, First 和 Second ，而在调用 <B>Request.Cookies</B>时并未指定其中任何一个关键字，那么将返回下列字符串。</P>
+      <PRE>First=firstkeyvalue&amp;Second=secondkeyvalue</PRE>
+      <P>如果客户端浏览器发送了两个同名的 cookie，那么 <B>Request.Cookie </B>将返回其中路径结构较深的一个。例如，如果有两个同名的的 cookie，但其中一个的路径属性为 /www/ 而另一个为 /www/home/，客户端浏览器同时将两个 cookie 都发送到 /www/home/ 目录中，那么 <B>Request.Cookie </B>将只返回第二个 cookie。</P>
+      <P>要确定某个 cookie 是不是 cookie 字典（cookie 有否有关键字），可使用下列脚本。</P>
+      <PRE>&lt;%= Request.Cookies("myCookie").HasKeys %&gt;</PRE>
+      <P>如果 myCookie 是一个 cookie 字典，则前面的赋值为 TRUE。否则，为 FALSE。</P>
+      <P>可以通过循环遍历 <B>Cookies </B>集合中的所有 cookie 或 cookie 中的所有关键字。但是，通过关键字在没有关键字的 cookie 上遍历将不产生任何输出。使用 <B>HasKeys</B> 语法先检查一下 cookie 是否有关键字，可以避免这种情况。下面的例子对此进行演示。</P>
+      <PRE>&lt;% 
+'Print out the entire cookie collection.
+For Each cookie in Request.Cookies
+  If Not cookie.HasKeys Then
+    'Print out the cookie string 
+%&gt;
+    &lt;%= cookie %&gt; = &lt;%= Request.Cookies(cookie)%&gt;
+&lt;%
+Else
+  'Print out the cookie collection
+  For Each key in Request.Cookies(cookie)
+%&gt;
+  &lt;%= cookie %&gt; (&lt;%= key %&gt;) = &lt;%= Request.Cookies(cookie)(key)%&gt;
+&lt;%
+  Next 
+End If
+Next 
+%&gt;</PRE>
+      <H4>示例</H4>
+      <P>下面的例子打印 Web 页中的 myCookie 的值。</P>
+      <PRE>这是名为 myCookie 的 cookie 值: 
+&lt;%= Request.Cookies("myCookie") %&gt;</PRE>
+  </DD>
+</dl>
+</body>
+</html>

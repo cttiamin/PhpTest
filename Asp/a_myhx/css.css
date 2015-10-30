@@ -1,0 +1,75 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a.a01:link {
+	color: #FEFEFE;
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+}
+a.a01:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FEFEFE;
+	text-decoration: underline;
+}
+a.a01:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FEFEFE;
+	text-decoration: none;
+}
+.font01 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	font-family: "宋体";
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	width: 50px;
+	height: 12px;
+}
+.table01 {
+	height: 18px;
+	width: 95px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #1B4A78;
+	text-decoration: none;
+}
+.STYLE1 {color: #FFFFFF}
+.font02 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	color: #1B4A78;
+	text-decoration: none;
+	height: 18px;
+}
+a.font02:link {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	color: #184974;
+	text-decoration: none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML DIR="LTR" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:myScript="http://iisue" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<HEAD>
+<META NAME="DESCRIPTION" VALUE="Reference information about the built-in objects available to ASP applications, like the Request and Response objects.">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+		<script SRC="scripts/langref.js"></script>
+		<script SRC="scripts/linkcss.js"></script>
+<title>Response.ContentType</title><XML><MSHelp:TOCTitle Title="Response.ContentType"/>
+<MSHelp:RLTitle Title="Response.ContentType (IIS)"/>
+<MSHelp:Attr Name="DocSet" Value="IIS SDK"/>
+<MSHelp:Attr Name="DocSet" Value="PSDK"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+<MSHelp:Attr Name="Technology" Value="IIS"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbIIS" />
+<MSHelp:Attr Name="Technology" Value="ASP"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbASP" />
+
+<MSHelp:Attr Name="TopicType" Value="kbSyntax"/>
+<MSHelp:Keyword Index="A" Term="Response.ContentType"/>
+<MSHelp:Keyword Index="A" Term="_IIS6_Response.ContentType"/>
+<MSHelp:Keyword Index="F" Term="ContentType" /></XML></HEAD>
+
+<body topmargin=0 id="bodyID">
+<a name="top"></a>			<TABLE CLASS="buttonbarshade" cellspacing="0" cellpadding="0">
+				<TR>
+					<TD></TD>
+				</TR>
+			</TABLE>
+		<TABLE class="buttonbartable" cellspacing="0" cellpadding="0">
+			<TR id="hdr">
+				<TD runninghead="">
+					Platform SDK: IIS SDK
+				</TD>
+			</TR>
+		</TABLE>
+
+<span class="version">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>[IIS 5.0]</b>&nbsp;<b>[IIS 5.1]</b>&nbsp;<b>[IIS 6.0]</b></span>
+
+<h1>Response.ContentType</h1>
+<p>The <b>ContentType</b> property specifies the HTTP content type
+for the response. If no <b>ContentType</b> is specified, the
+default is text/HTML.</p>
+<h4>Syntax</h4>
+<p><b>Response.ContentType</b> [<b>=</b> <i>ContentType</i>
+]</p>
+<h4>Parameters</h4>
+<dl>
+<dt><i>ContentType</i></dt>
+<dd>A string describing the content type. This string is usually
+formatted as <i>type/subtype</i>, where <i>type</i> is the general
+content category, and <i>subtype</i> is the specific content type.
+For a full list of supported content types, see your Web browser
+documentation or the current HTTP specification.</dd>
+</dl>
+<h4>Example</h4>
+<p>The following example sets the content type to Channel
+Definition Format (CDF).</p>
+<pre><code>&lt;% Response.ContentType = "application/x-cdf" %&gt;</code></pre>
+<p>The following examples set the <b>ContentType</b> property to
+other common values.</p>
+<pre><code>&lt;% Response.ContentType = "text/HTML" %&gt;
+&lt;% Response.ContentType = "image/GIF" %&gt;
+&lt;% Response.ContentType = "image/JPEG" %&gt;
+&lt;% Response.ContentType = "text/plain" %&gt;
+&lt;% Response.ContentType = "image/JPEG" %&gt;
+</code></pre>
+<h4>Applies To</h4>
+<p><a href="ref_vbom_reso.htm">Response Object</a></p>
+  <h4>Requirements</h4>
+  <p><b>Platforms:</b> Windows&nbsp;2000 with IIS 5.0 installed, 
+   Windows&nbsp;XP with IIS 5.1 installed, 
+   Windows Server&nbsp;2003 family with IIS 6.0 installed<br>
+  </p>
+		<DIV CLASS="itfBorder"><IMG SRC="art/tiny.gif" WIDTH="1" HEIGHT="1"></DIV>
+<DIV CLASS="itf">
+  <B>Platform SDK Release: <FONT COLOR="#ddaa00">February 2003</FONT></B>
+  <TABLE CELLPADDING="0" CELLSPACING="0"><TR VALIGN="top">
+    <TD WIDTH="13" CLASS="itficon"><A HREF="mailto:sdkfdbk@microsoft.com?subject=TITLE:%20Response.ContentType;%20RELEASE:%20February%202003;%20URL:%20ref_vbom_resopct.htm" Title="Send feedback to the Platform SDK team at sdkfdbk@microsoft.com"><IMG SRC="art/sendfdbk.gif" BORDER="0" WIDTH="13" HEIGHT="15"/></A></TD>
+    <TD WIDTH="47%" CLASS="itf"><A HREF="mailto:sdkfdbk@microsoft.com?subject=TITLE:%20Response.ContentType;%20RELEASE:%20February%202003;%20URL:%20ref_vbom_resopct.htm" Title="Send feedback to the Platform SDK team at sdkfdbk@microsoft.com">What did you think of this topic?</A><BR></TD>
+    <TD WIDTH="16" CLASS="itficon"><IMG SRC="art/download.gif" BORDER="0" WIDTH="16" HEIGHT="16"/></TD>
+    <TD CLASS="itf"><A HREF="https://qmedia.e-storefront.com/showcontent.asp?contentname=PlatformSDKHome" TARGET="_blank" TITLE="Order a Platform SDK CD">Order a Platform SDK CD</A></TD>
+  </TABLE>
+</DIV>
+<BR/>
+
+
+  	</body>
+  </HTML>

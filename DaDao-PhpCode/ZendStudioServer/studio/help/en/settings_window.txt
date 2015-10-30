@@ -1,0 +1,2 @@
+<p><b>Settings Window</b></p>
+The Settings Window allows you to view and edit the global settings for a Server Center.<br>
